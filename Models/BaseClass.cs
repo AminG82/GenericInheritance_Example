@@ -1,8 +1,8 @@
 ﻿namespace GenericInheritance_Example.Models
 {
-    public class BaseClass
+    public class BaseClass <TKey , TDate>
     {
-        public int Id { get; set; }
-        public DateTime CreationDate { get; set; }
+        public TKey Id { get; set; }
+        public TDate CreationDate { get; set; }
     }
 }
